@@ -1,4 +1,4 @@
-# Simplified Workflow Verification Framework for Databutton
+# Workflow Verification Framework Prompt for Databutton
 
 This framework helps verify if your application's workflows match expected behavior by having the agent document the actual implementation in a clear, structured format.
 
