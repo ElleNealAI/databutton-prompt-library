@@ -1,86 +1,130 @@
-# databutton-prompt-library
-A collection of prompts shared by the community to improve the vibe coding process with the Databutton Agent.
+# VibeDebug: Structured Debugging Framework for Databutton
 
-# The IDEAL Troubleshooting Framework for Databutton
+## What is VibeDebug?
 
-This guide helps you select the right prompts for solving problems in your Databutton applications. Each prompt is organized by phase in the IDEAL troubleshooting framework.
+VibeDebug is a structured debugging and analysis framework for Databutton applications that helps you systematically identify, define, explore, fix, and learn from issues in your applications. Based on the proven IDEAL methodology, VibeDebug transforms chaotic troubleshooting into a methodical process that saves time and builds team knowledge.
 
-## What is the IDEAL Framework?
+**VibeDebug seamlessly integrates with your Databutton workspace**, providing:
+- Ready-to-use task templates for common debugging scenarios
+- Standardized JSON output formats for consistent documentation
+- Beautiful visualizations of complex problems
+- A permanent record of debugging insights and solutions
 
-The IDEAL framework is a systematic approach to troubleshooting and problem-solving in software development:
+## Getting Started in 3 Steps
 
-- **I**dentify the problem
-- **D**efine the scope and root causes
-- **E**xplore potential solutions
-- **A**ct on implementing fixes
-- **L**earn from the experience
+Setting up VibeDebug in your Databutton project is simple:
 
-## Prompt Library Navigation
+1. **Create the required files** (copy our templates)
+2. **Navigate to your Task Results Page**
+3. **Run your first analysis task**
 
-Select the appropriate prompt based on where you are in the troubleshooting process:
+Let's walk through the setup process step by step.
 
-### Phase 1: IDENTIFY 🔍
+## Setup Instructions
 
-When you're trying to understand what's wrong:
+### Step 1: Create the Required Files
 
-| Prompt | Purpose | When to Use |
-|--------|---------|-------------|
-| **[Error Message Decoder](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/1.%20IDENTIFY/Error%20Message%20Decoder.md)** | Explains cryptic error messages in plain language | When you encounter error messages you don't understand |
-| **[Ambiguity Test](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/1.%20IDENTIFY/Ambiguity%20Test.md)** | Identifies unclear requirements | Before starting implementation to clarify expectations |
-| **[Performance Bottleneck Identifier](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/1.%20IDENTIFY/Performance%20Bottleneck%20Identifier.md)** | Finds causes of slow performance | When your application is running slowly |
-| **[User Experience Gap Analyzer](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/1.%20IDENTIFY/User%20Experience%20Gap%20Analyzer.md)** | Finds disconnects between user expectations and implementation | When users report confusing or frustrating experiences |
+#### Create `TaskResultPage.jsx`
 
-### Phase 2: DEFINE 🔬
+1. Create a page called `TaskResultPage` in your Databutton project
+2. Create an API called `task_api` in your Databutton project
 
-When you need to understand the scope and root causes:
 
-| Prompt | Purpose | When to Use |
-|--------|---------|-------------|
-| **[Root Cause Analysis](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/2.%20DEFINE/Root%20Cause%20Analysis.md)** | Traces symptoms to underlying causes | When you need to find the true source of an issue |
-| **[Workflow Verification Framework](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/2.%20DEFINE/Workflow%20Verification%20Prompt.md)** | Documents actual workflows | When you need to understand how a feature is actually implemented |
-| **[Component Dependency Mapper](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/2.%20DEFINE/Component%20Dependency%20Mapper.md)** | Visualizes relationships between components | When you need to understand how parts of your app are connected |
-| **[State Management Debugger](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/2.%20DEFINE/State%20Management%20Debugger.md)** | Tracks React state issues | When you have state-related bugs or unexpected rendering |
+### The VibeDebug Process
 
-### Phase 3: EXPLORE 🧪
+1. **Select a Task Template**: Choose the appropriate analysis template based on the issue you're facing
+2. **Agent Executes the Task**: The Databutton agent runs the analysis according to the template
+3. **Results are Saved**: Analysis results are automatically saved to storage
+4. **View Formatted Results**: Navigate to the Task Results Page to see a beautifully formatted report
 
-When you're investigating potential solutions:
+### Available Task Types
 
-| Prompt | Purpose | When to Use |
-|--------|---------|-------------|
-| **[API Integration Test](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/3.%20EXPLORE/API%20Integration%20Test.md)** | Verifies API integrations | When testing connections to external services |
-| **[Code Quality Assessment](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/3.%20EXPLORE/Code%20Quality%20Assessment.md)** | Evaluates code structure and patterns | When assessing maintainability or planning refactoring |
-| **[Environment Compatibility Checker](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/3.%20EXPLORE/Environment%20Compatibility%20Checker.md)** | Identifies cross-platform issues | When ensuring your app works on different devices and browsers |
+VibeDebug includes templates for various debugging scenarios:
 
-### Phase 4: ACT 🛠️
-When you're ready to implement solutions:
-| Prompt | Purpose | When to Use |
-|--------|---------|-------------|
-| **[Debugging Task Creator](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/4.%20ACT/Debugging%20Task%20Creator.md)** | Creates structured debugging tasks | When translating analysis into actionable fixes |
-| **[Solution Implementation Guide](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/4.%20ACT/Solution%20Implementation%20Guide%20Task.md)** | Provides systematic implementation steps | When implementing complex solutions that need careful planning |
-| **[Change Documentation Generator](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/4.%20ACT/Change%20Documentation%20Generator.md)** | Documents implemented changes | After making significant modifications to record what was done |
+#### IDENTIFY Phase
+- **Ambiguity Test**: Identify unclear requirements before implementation
+- **Error Message Decoder**: Translate cryptic errors into actionable solutions
+- **Performance Bottleneck Identifier**: Find slow spots in your application
+- **User Experience Gap Analyzer**: Discover disconnects between user expectations and reality
 
-### Phase 5: LEARN 📚
+#### DEFINE Phase
+- **Root Cause Analysis**: Trace symptoms to underlying causes
+- **Workflow Verification**: Document how features actually work
+- **Component Dependency Mapper**: Visualize relationships between components
+- **State Management Debugger**: Track React state issues
 
-When you want to improve for the future:
+#### EXPLORE Phase
+- **API Integration Test**: Verify external service connections
+- **Code Quality Assessment**: Evaluate code structure and patterns
+- **Environment Compatibility Checker**: Find cross-browser/device issues
 
-| Prompt | Purpose | When to Use |
-|--------|---------|-------------|
-| **[Project Retrospective Generator](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/5.%20LEARN/Project%20Retrospective%20Generator.md)** | Facilitates learning from experiences | At project milestones to capture lessons learned |
-| **[Knowledge Base Builder](https://github.com/ElleNealAI/databutton-prompt-library/blob/main/Debugging%20(IDEAL)%20framework/5.%20LEARN/Knowledge%20Base%20Builder.md)** | Organizes technical knowledge | When creating documentation for future reference |
+#### ACT Phase
+- **Debugging Task Creator**: Create structured debugging plans
+- **Solution Implementation Guide**: Detailed implementation steps
+- **Change Documentation Generator**: Record what was changed and why
 
-## How to Choose the Right Prompt
+#### LEARN Phase
+- **Project Retrospective Generator**: Capture lessons learned
+- **Knowledge Base Builder**: Create reusable documentation
 
-1. **Identify your current phase** in the problem-solving process
-2. **Review the prompts** available for that phase
-3. **Select the prompt** most closely matching your specific need
-4. **Follow the instructions** in the prompt file
+## Advanced Usage
 
-## Using Multiple Prompts Together
+### Customizing Templates
 
-For complex problems, you may need to use prompts from different phases in sequence:
+You can modify the task templates to fit your specific needs:
 
-1. Start with **IDENTIFY** prompts to understand the issue
-2. Move to **DEFINE** prompts to scope the problem
-3. Use **EXPLORE** prompts to investigate solutions
-4. Apply **ACT** prompts to implement fixes
-5. Finish with **LEARN** prompts to document lessons
+1. Fork the [Databutton Prompt Library](https://github.com/ElleNealAI/databutton-prompt-library) repository
+2. Modify the templates in the `Task Collection` folder
+3. Update the `GITHUB_REPO_URL` in your `task_api.py` to point to your forked repository
+4. Refresh the templates in your application
+
+### Creating Custom VibeDebug Templates
+
+You can create your own templates following this structure:
+
+```markdown
+# Task: [Clear task title]
+
+## Description
+[Detailed description of what the task does]
+
+Using the Databutton agent tools, follow these steps:
+1. [Step 1]
+2. [Step 2]
+3. [etc.]
+
+The JSON structure must follow this format:
+```json
+{
+  "taskMetadata": { ... },
+  "summary": { ... },
+  "visualizations": [ ... ],
+  "sections": [ ... ],
+  "actions": [ ... ],
+  "references": [ ... ]
+}
+
+
+## Definition of Done
+- [Criteria 1]
+- [Criteria 2]
+- [etc.]
+
+## Output Format
+[Description of expected output format]
+```
+
+## Support and Resources
+
+For additional help:
+- Submit issues on the GitHub repository
+
+## Contributing
+
+We welcome contributions to improve VibeDebug:
+
+1. Fork the repository
+2. Create a new branch for your feature or fix
+3. Submit a pull request with a clear description of your changes
+
+Together, we can make debugging Databutton applications easier and more systematic!
