@@ -44,7 +44,7 @@ The JSON structure must follow this format:
       "subtype": "mindmap",
       "title": "Mental Model Comparison",
       "description": "Comparison of user mental model vs. system implementation",
-      "content": "mindmap\n  root((Feature X))\n    User Expectations\n      ((Simple Process))\n      ((Immediate Feedback))\n      ((Clear Options))\n    System Implementation\n      ((Multi-step Process))\n      ((Delayed Confirmation))\n      ((Hidden Options))"
+      "content": "mindmap\n  root(Feature X)\n    User Expectations\n      Simple Process\n      Immediate Feedback\n      Clear Options\n    System Implementation\n      Multi-step Process\n      Delayed Confirmation\n      Hidden Options"
     }
   ],
   "sections": [
