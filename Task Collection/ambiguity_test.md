@@ -37,7 +37,7 @@ The JSON structure must follow this format:
       "subtype": "mindmap",
       "title": "Ambiguity Overview",
       "description": "Mind map of ambiguity categories and issues",
-      "content": "mindmap\n  root((Feature Name\\nAmbiguities))\n    Goal Clarity\n      ((Issue 1))\n      ((Issue 2))\n    Technical Requirements\n      ((Issue 3))\n      ((Issue 4))\n    ..."
+      "content": "mindmap\n  root(Feature Name\\nAmbiguities)\n    Goal Clarity\n      Issue 1\n      Issue 2\n    Technical Requirements\n      Issue 3\n      Issue 4\n    ..."
     },
     {
       "type": "mermaid",
